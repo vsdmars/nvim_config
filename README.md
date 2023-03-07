@@ -1,4 +1,4 @@
-# 💤 LazyVim
+# 💤 LazyVim with VSDMARS mods
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+A modified [LazyVim](https://github.com/LazyVim/LazyVim) for VSDMARS.
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
