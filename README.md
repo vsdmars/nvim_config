@@ -3,13 +3,13 @@
 ## Customized [LazyVim](https://github.com/LazyVim/LazyVim) for VSDMARS.
 ## Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
-lua/plugins/disabled.lua:
+lua/plugins/disabled.lua:<br />
 ``` list default plugins and customized plugins with toggling enable or disable ```
 
-lua/config/functions.lua:
+lua/config/functions.lua:<br />
 ``` lua functions ```
 
-config/:
+config/:<br />
 ``` vim configs loaded by lua/config/options.lua ```
 
 
