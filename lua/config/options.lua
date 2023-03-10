@@ -6,3 +6,6 @@ vim.g.maplocalleader = ","
 
 -- yank to the system register (*) by default
 vim.opt.clipboard:append("unnamed")
+
+-- disable relativenumber from lazyvim
+vim.wo.relativenumber = false
