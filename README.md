@@ -2,6 +2,8 @@
 
 ## Customized [LazyVim](https://github.com/LazyVim/LazyVim) for VSDMARS.
 ## Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+## Keymap reference [documentation](https://www.lazyvim.org/keymaps)
+
 
 ![image](https://github.com/vsdmars/nvim_config/blob/main/image/image.png?raw=true)
 
