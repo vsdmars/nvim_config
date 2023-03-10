@@ -167,4 +167,5 @@ vim.opt.formatoptions = vim.opt.formatoptions + "j"
 vim.opt.colorcolumn = "80"
 vim.cmd([[highlight ColorColumn ctermbg=0 guibg=lightgrey]])
 
+vim.cmd("source $HOME/.config/nvim/config/all-config.vim")
 require("config.functions")
