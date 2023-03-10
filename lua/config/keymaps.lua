@@ -1,6 +1,7 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+
 local Util = require("lazyvim.util")
 
 local function map(mode, lhs, rhs, opts)
@@ -26,15 +27,25 @@ map("n", "<silent> <leader>N", ":set number!<CR>", {})
 -- the following mappings will produce:
 -- d => "delete"
 -- leader d => "cut"
-map("n", "x", '"_x', { desc = "delete not cut" })
-map("x", "x", '"_x', { desc = "delete not cut" })
-map("n", "d", '"_d', { desc = "delete not cut" })
-map("x", "d", '"_d', { desc = "delete not cut" })
-map("x", "d", '"_d', { desc = "delete not cut" })
-map("n", "D", '"_D', { desc = "delete not cut" })
-map("x", "D", '"_D', { desc = "delete not cut" })
-map("n", "<leader>dd", '""d', { desc = "delete not cut" })
-map("n", "<leader>DD", '""D', { desc = "delete not cut" })
+map("n", "x", '"_x', { desc = "delete to black hole register" })
+map("x", "x", '"_x', { desc = "delete to black hole register" })
+map("n", "d", '"_d', { desc = "delete to black hole register" })
+map("x", "d", '"_d', { desc = "delete to black hole register" })
+map("n", "D", '"_D', { desc = "delete to black hole register" })
+map("x", "D", '"_D', { desc = "delete to black hole register" })
+map("n", "dd", '"_dd', { desc = "delete to black hole register" })
+
+map("n", "p", '""p', { desc = "paste from unnamed register" })
+map("x", "p", '""p', { desc = "paste from unnamed register" })
+
+map("n", "<leader>d", '""d', { desc = "delete and yank" })
+map("x", "<leader>d", '""d', { desc = "delete and yank" })
+map("n", "<leader>x", '""x', { desc = "delete and yank" })
+map("x", "<leader>x", '""x', { desc = "delete and yank" })
+map("n", "<leader>dd", '""dd', { desc = "delete and yank" })
+map("x", "<leader>dd", '""dd', { desc = "delete and yank" })
+map("n", "<leader>D", '""D', { desc = "delete and yank" })
+map("x", "<leader>D", '""D', { desc = "delete and yank" })
 
 -- http://superuser.com/questions/410982/in-vim-how-can-i-quickly-switch-between-tabs
 -- Go to tab by number
