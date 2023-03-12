@@ -20,7 +20,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "bashls",
-          -- "clangd",
+          "clangd",
           "cmake",
           -- "dockerls",
           -- "docker_compose_language_service",
