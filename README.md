@@ -10,12 +10,24 @@
 lua/plugins/disabled.lua:<br />
 ``` list default plugins and customized plugins with toggling enable or disable ```
 
+lua/plugins/coding/:<br />
+``` coding related modules ```
+
+lua/plugins/editing/:<br />
+``` edit related modules ```
+
+lua/plugins/lib/:<br />
+``` lua library modules ```
+
+lua/plugins/lsp/:<br />
+``` lsp modules ```
+
+lua/plugins/ui/:<br />
+``` ui related modules ```
+
 lua/config/functions.lua:<br />
-``` lua functions ```
+``` lua functions used by config ```
 
 config/:<br />
 ``` vim configs loaded by lua/config/options.lua ```
 
-
-**TODO:**
-- [ ] Language Format and Lint (Rust, C++, Python)
