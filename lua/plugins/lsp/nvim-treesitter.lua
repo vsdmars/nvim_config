@@ -1,8 +1,8 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    version = false, -- last release is way too old and doesn't work on Windows
-    build = ":TSUpdate",
+    -- version = false, -- last release is way too old and doesn't work on Windows
+    -- build = ":TSUpdate",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
       {
@@ -32,7 +32,7 @@ return {
       -- vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
     end,
     keys = {
-      { "<c-space>", desc = "Increment selection" },
+      { "<M-space>", desc = "Increment selection" },
       { "<bs>", desc = "Decrement selection", mode = "x" },
     },
     ---@type TSConfig
@@ -75,10 +75,8 @@ return {
       textobjects = {
         select = {
           enable = true,
-
           -- Automatically jump forward to textobj, similar to targets.vim
           lookahead = true,
-
           keymaps = {
             -- You can use the capture groups defined in textobjects.scm
             ["af"] = "@function.outer",
